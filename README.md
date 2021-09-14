@@ -73,4 +73,4 @@ As an uptime monitoring RESTful API server, authorized users should enter URLs t
 
 ### Additional Resources
 
-- [Postman Collection Link: Local or Docker](https://www.getpostman.com/collections/7f7183970966924c9c6a)
+- [Postman Collection Link: Local or Docker](https://www.getpostman.com/collections/790bf0003da6a349291d)
