@@ -7,7 +7,7 @@ const { DBUrl } = require('../config');
 
 module.exports = async function connectToDB() {
   const options = {
-    useNewUrlParser: false,
+    useNewUrlParser: true,
     useUnifiedTopology: true,
     // useFindAndModify: false,
   };

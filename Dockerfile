@@ -4,6 +4,8 @@ LABEL maintainer="Yahya Wsea <yahya.wsea@gmail.com>"
 
 RUN mkdir -p /app
 
+RUN npm install --global nodemon
+
 WORKDIR /app
 
 COPY package.json package-lock.json ./
