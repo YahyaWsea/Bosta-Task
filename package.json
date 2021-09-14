@@ -1,0 +1,41 @@
+{
+  "name": "Bosta-Task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node .",
+    "dev": "nodemon --inspect=0.0.0.0:9229 .",
+    "lint": "eslint .",
+    "lint_fix": "eslint . --quiet --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.5",
+    "mongoose-hidden": "^1.9.1",
+    "mongoose-type-url": "^2.1.0",
+    "nodemailer": "^6.6.3",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.4",
+    "babel-jest": "^27.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.1.1",
+    "nodemon": "^2.0.12",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
