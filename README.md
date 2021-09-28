@@ -4,38 +4,46 @@
 
 - [Introduction](#introduction)
 
-- [Tech Stack and Plugins](#tech-stack)
+- [Tech Stack](#tech-stack)
+
+- [Database Models](#database-models)
 
 - [Requirements](#requirements)
 
 - [Get-Started](#get-started)
 
+- [Additional Resources](#additional-resources)
+
 ## Introduction
 
-This project is a submission for a task sent by [atp Vital](https://atpvital.com/) as a requirement process of FullStack developer.
+This project is a submission for a task sent by [Bosta](https://bosta.co/) as a requirement process of Backend Engineer.
 
-As a real-time drag & drop board game the following instructions:
+As an uptime monitoring RESTful API server, authorized users should enter URLs to be monitored, and get detailed uptime reports based on the following instructions:
 
 
-- Each team will view all team members movements.
-- Player1 , Player2 will view their movements and actions only and so will Player3, Player4.
-- The history of players movements is required to be kept when refreshing any page the last state of the board.
+- Sign-up with email verification.
+- Stateless authentication using JWT.
+- Users can create a check to monitor a given URL if it is up or down.
+- Users can edit, pause, or delete their checks if needed.
+- Users may receive a notification on a webhook URL by sending HTTP POST request whenever a check goes down or up.
+- Users should receive email alerts whenever a check goes down or up.
+- Users can get detailed uptime reports about their checks availability, average response time, and total uptime/downtime.
+- Users can group their checks by tags and get reports by tag.
 
-#### Drag & Drop Explanation
 
-We should be able to drag either container of coins when dragging the container all coins value will be attached to it,
-but when we start to drag coin value its value should be 1 and leave other values in the same position (container)
+
 
 
 ## Tech Stack
 
-- [Reactjs](https://reactjs.org/).
 - [Nodejs](https://nodejs.org/) combined with [Expressjs](https://expressjs.com) as minimal web framework.
 - Database Used is [MongoDB](https://www.mongodb.com/) combined with [Mongoose](https://mongoosejs.com/) as ODM.
 
-#### Plugins
--  [Socket.io](https://socket.io/docs/v4/) for real-time communication.
--  [React DnD](https://react-dnd.github.io/react-dnd/about) Drag and Drop for React
+
+## Database Models:
+  - User model: Has user properties like name, email, password, status, code.
+  - Check model: Has all check data provided by use with its related reports properties.
+
 
 ## Requirements
 
@@ -59,7 +67,10 @@ but when we start to drag coin value its value should be 1 and leave other value
   $ docker-compose up
   ```
 
-  - Backed Server will run by default on port `3333`, and is accessible from `http://localhost:3333`
-  - Frontend will run by default on port `3000`, and is accessible from `http://localhost:3000`
+  - Server will run by default on port `3000`, and is accessible from `http://localhost:3000`
+  - navigate to swagger from `http://localhost:3000/explorer`       **(Not Completed Unfortunately)**
   - Database will be accessible from `http://localhost:27018`
 
+### Additional Resources
+
+- [Postman Collection Link: Local or Docker](https://www.getpostman.com/collections/790bf0003da6a349291d)
